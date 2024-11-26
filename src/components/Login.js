@@ -14,7 +14,7 @@ const handleSubmit = (e)=>{
 }
 
 if(isLoggedIn){
-    return <h2>You are logged in!</h2>
+    return <h1>You are logged in!</h1>
 }
     return (
         <div>
