@@ -6,12 +6,9 @@ import Login from "./Login";
 const App = () => {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
   const handleLogin = ()=>{
-    setIsLoggedIn(true);
+    setIsLoggedIn(!isLoggedIn);
   }
 
-  // if(isLoggedIn){
-  //   return <h1>You are logged in!</h1>
-  // }
 
   return (
     <div>

@@ -12,7 +12,9 @@ const handleSubmit = (e)=>{
         alert('All* the field is required');
     }
 }
-
+if(isLoggedIn){
+    return <p>You are logged in!</p>
+  }
     return (
         <div>
             <h1>Login Page</h1>
