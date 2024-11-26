@@ -8,9 +8,14 @@ const App = () => {
   const handleLogin = ()=>{
     setIsLoggedIn(true);
   }
-  console.log(isLoggedIn)
+
+  // if(isLoggedIn){
+  //   return <h1>You are logged in!</h1>
+  // }
+
   return (
     <div>
+        <h1>Parent Component</h1>
         <Login isLoggedIn={isLoggedIn} onLogin={handleLogin}/>
     </div>
   )
