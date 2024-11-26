@@ -14,14 +14,14 @@ const handleSubmit = (e)=>{
 }
 
 if(isLoggedIn){
-    return <h2>You are Logged In!</h2>
+    return <h2>You are logged in!</h2>
 }
     return (
         <div>
             <form onSubmit={handleSubmit}>
-                <label htmlFor="username">Username</label>
+                <label htmlFor="username">Username:</label>
                 <input type='text' id='username' onChange={(e)=>setUserName(e.target.value)}/>
-                <label htmlFor="password">Password</label>
+                <label htmlFor="password">Password:</label>
                 <input type='text' id='password' onChange={(e)=>setPassword(e.target.value)}/>
                 <button id='submit'>Submit</button>
             </form>
